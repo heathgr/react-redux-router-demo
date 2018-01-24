@@ -8,16 +8,15 @@ const root = combineReducers({
 });
 
 export const getRoutes = (state) => state.routes;
+export const getDefaultRoute = (state) => state.routes[0];
 export const getLocation = (state) => state.router.location;
 export const getCurrentRoute = (state) => {
   const routes = getRoutes(state);
   const location = getLocation(state);
-  console.log('a: ', routes, ' b: ', location);
   const currentRoute = routes.find(
     (route) => route.pathname === location.pathname
   );
 
-  console.log('cr: ', currentRoute);
   return currentRoute;
 }
 
