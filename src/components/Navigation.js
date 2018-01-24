@@ -1,10 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Navigation = () => (
+const Navigation = ({ routes }) => (
   <ul>
-    <li>Tempurature</li>
-    <li>Stocks</li>
-    <li>Tempurature</li>
+    {
+      routes.map(
+        (route) => (
+          <li key={route.pathname}>
+            <Link to={route.pathname}>
+              {route.displayname}
+            </Link>
+          </li>
+        )
+      )
+    }
   </ul>
 );
 

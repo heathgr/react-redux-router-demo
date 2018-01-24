@@ -1,18 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import Content from './Content';
 import Navigation from './Navigation';
 import StatusBar from './StatusBar';
+import {
+  getRoutes,
+  getCurrentRoute,
+} from '../reducers/root';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Content />
-        <Navigation />
-        <StatusBar />
-      </div>
-    );
-  }
-}
+const App = ({ routes, currentRoute }) => (
+  <div className="App">
+    <Content />
+    <Navigation routes={routes} />
+    <StatusBar currentRoute={currentRoute} />
+  </div>
+)
 
-export default App;
+const stateToProps = (state) => ({
+  routes: getRoutes(state),
+  currentRoute: getCurrentRoute(state),
+});
+
+const dispatchToProps = {
+
+};
+
+export default connect(stateToProps, dispatchToProps)(App);

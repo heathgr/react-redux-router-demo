@@ -1,7 +1,7 @@
 import React from 'react';
 
-const StatusBar = () => (
-  <div>status bar</div>
+const StatusBar = ({ currentRoute }) => (
+  <div>{currentRoute ? currentRoute.displayname : ''}</div>
 );
 
 export default StatusBar;
