@@ -10,7 +10,7 @@ import {
 
 const App = ({ routes, currentRoute }) => (
   <div className="App">
-    <Content />
+    <Content currentRoute={currentRoute} />
     <Navigation routes={routes} />
     <StatusBar currentRoute={currentRoute} />
   </div>
