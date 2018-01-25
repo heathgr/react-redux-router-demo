@@ -4,4 +4,35 @@ article {
   grid-column: content-start / content-end;
   grid-row: content-start / content-end;
   background: $content-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    max-width: 500px;
+  }
+
+  .content__stock-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0px 10px;
+    font-size: 0.8em;
+  }
+
+  .content__stock-name {
+    width: 150px;
+  }
+  .content__stock-symbol {
+    width: 50px;
+  }
+  .content__stock-price {
+    width: 50px;
+  }
+  .content__stock-change {
+    width: 50px;
+  }
 }
