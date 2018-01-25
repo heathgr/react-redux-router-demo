@@ -1,4 +1,7 @@
+$content-background: #F7F7F7;
+
 article {
   grid-column: content-start / content-end;
   grid-row: content-start / content-end;
+  background: $content-background;
 }

@@ -1,18 +1,47 @@
+$navigation-primary: #BCBFC5;
+$navigation-background: #262F40;
+
 nav {
-  background: #262F40;
-  color: #BCBFC5;
+  background: $navigation-background;
+  color: $navigation-primary;
   grid-column: nav-start / content-start;
   grid-row: header-start / content-end;
 
-  
+  ul {
+    margin: 40px 0px;
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  li {
+    padding: 5px 10px;
+  }
+
+  .nav__li--active {
+    color: $navigation-background;
+    background: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: inherit;
+  }
 }
 
 .nav-toggle {
+  width: 30px;
+  height: 30px;
   visibility: hidden;
-  display: block;
   position: fixed;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
+  background: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {

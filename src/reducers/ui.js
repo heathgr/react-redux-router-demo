@@ -1,4 +1,7 @@
-import { NAVIGATION_TOGGLE_VISIBILITY } from '../actions/actions';
+import {
+  NAVIGATION_TOGGLE_VISIBILITY,
+  LOCATION_CHANGE,
+} from '../actions/actions';
 
 const initialState = {
   isNavigationVisible: false,
@@ -6,6 +9,12 @@ const initialState = {
 
 const ui = (state = initialState, action) => {
   switch (action.type) {
+    case LOCATION_CHANGE: {
+      return {
+        ...state,
+        isNavigationVisible: false,
+      }
+    }
     case NAVIGATION_TOGGLE_VISIBILITY: {
       return {
         ...state,

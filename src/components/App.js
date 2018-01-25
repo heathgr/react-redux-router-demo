@@ -24,6 +24,7 @@ const App = ({
     <Navigation
       routes={routes}
       isNavigationVisible={isNavigationVisible}
+      currentRoute={currentRoute}
     />
     <NavigationToggle
       isNavigationVisible={isNavigationVisible}

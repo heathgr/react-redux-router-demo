@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = ({ routes, isNavigationVisible }) => (
+const Navigation = ({ routes, currentRoute, isNavigationVisible }) => (
   <nav className={isNavigationVisible ? 'nav--visible' : null }>
     <ul>
       {
         routes.map(
           (route) => (
-            <li key={route.pathname}>
+            <li key={route.pathname} className={ route.pathname === currentRoute.pathname ? 'nav__li--active' : null}>
               <Link to={route.pathname}>
                 {route.displayname}
               </Link>
