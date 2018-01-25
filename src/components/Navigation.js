@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = ({ routes, currentRoute, isNavigationVisible }) => (
-  <nav className={isNavigationVisible ? 'nav--visible' : null }>
+  currentRoute ? <nav className={isNavigationVisible ? 'nav--visible' : null }>
     <ul>
       {
         routes.map(
@@ -17,7 +17,7 @@ const Navigation = ({ routes, currentRoute, isNavigationVisible }) => (
         )
       }
     </ul>
-  </nav>
+  </nav> : null
 );
 
 export default Navigation;
