@@ -1,4 +1,4 @@
-#Notes:
+# Notes:
 
 - I made use of React, Redux, and React Router.
 - Most of my components are stateless.  I rely on the state tree to determine how things render.
@@ -8,7 +8,7 @@
 - I used axios as my http client to fetch some data from the Yahoo Weather and IEX Trading apis.
 
 
-#Running Locally
+# Running Locally
 
 To run the project locally perform the following:
 
