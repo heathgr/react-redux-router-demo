@@ -15,5 +15,5 @@ To run the project locally perform the following:
 1. Clone this repository into the directory of your choice.
 2. Run `npm install`.
 3. Compile the projects CSS by running `npm run css`.
-4. Start the local development server by running 'npm start'.
+4. Start the local development server by running `npm start`.
 5. Open http://localhost:3000/ in the browser of your choice.
