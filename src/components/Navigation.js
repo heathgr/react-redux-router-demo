@@ -8,6 +8,7 @@ const Navigation = ({ routes, currentRoute, isNavigationVisible }) => (
         routes.map(
           (route) => (
             <li key={route.pathname} className={ route.pathname === currentRoute.pathname ? 'nav__li--active' : null}>
+              <i class={`fas ${route.icon}`} />
               <Link to={route.pathname}>
                 {route.displayname}
               </Link>

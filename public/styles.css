@@ -33,6 +33,10 @@ nav {
     text-decoration: none; }
   nav a:visited {
     color: inherit; }
+  nav i {
+    width: 18px;
+    margin-right: 5px;
+    text-align: center; }
 
 .nav-toggle {
   width: 30px;
