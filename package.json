@@ -22,5 +22,6 @@
   },
   "devDependencies": {
     "node-sass": "^4.7.2"
-  }
+  },
+  "homepage": "https://storage.googleapis.com/grants-react-redux-router-demo/"
 }

@@ -30,7 +30,10 @@ nav {
     color: #262F40;
     background: white; }
   nav a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: inherit; }
+  nav a:link {
+    color: inherit; }
   nav a:visited {
     color: inherit; }
   nav i {
