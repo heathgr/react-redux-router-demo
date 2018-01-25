@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Home = () => <div>This is the home component.</div>;
-const Temperature = () => <div>This will show the tempurature in Salt Lake.</div>;
-const Stocks = () => <div>This will show some stocks or something.</div>;
-const WordOfTheDay = () => <div>This will show the word of the day.</div>;
+const Home = () => <article>This is the home component.</article>;
+const Temperature = () => <article>This will show the tempurature in Salt Lake.</article>;
+const Stocks = () => <article>This will show some stocks or something.</article>;
+const WordOfTheDay = () => <article>This will show the word of the day.</article>;
 
 const pages = {
   Home,

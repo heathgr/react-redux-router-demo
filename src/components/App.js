@@ -2,17 +2,17 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Content from './Content';
 import Navigation from './Navigation';
-import StatusBar from './StatusBar';
+import Header from './Header';
 import {
   getRoutes,
   getCurrentRoute,
 } from '../reducers/root';
 
 const App = ({ routes, currentRoute }) => (
-  <div className="App">
+  <div className="layout">
     <Content currentRoute={currentRoute} />
     <Navigation routes={routes} />
-    <StatusBar currentRoute={currentRoute} />
+    <Header currentRoute={currentRoute} />
   </div>
 )
 

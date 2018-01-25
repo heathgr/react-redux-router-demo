@@ -1,0 +1,14 @@
+header {
+  grid-row: header-start / content-start;
+  grid-column: content-start / content-end;
+  background: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  h2 {
+    font-size: 1.25em;
+    margin: 0px 10px;
+  }
+}

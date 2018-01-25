@@ -1,0 +1,20 @@
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.layout {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: [nav-start] 200px [content-start] auto [content-end];
+  grid-template-rows: [header-start] 30px [content-start] auto [content-end];
+}
+
+@media only screen and (max-width: 1024px) {
+  .layout {
+    grid-template-columns: [content-start] auto [content-end];
+  }
+}
