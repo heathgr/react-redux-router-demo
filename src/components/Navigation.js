@@ -9,7 +9,7 @@ const Navigation = ({ routes, currentRoute, isNavigationVisible }) => (
           (route) => (
             <li key={route.pathname} className={ route.pathname === currentRoute.pathname ? 'nav__li--active' : null}>
               <i className={`fas ${route.icon}`} />
-              <Link to={route.pathname}>
+              <Link to={`${process.env.PUBLIC_URL}${route.pathname}`}>
                 {route.displayname}
               </Link>
             </li>

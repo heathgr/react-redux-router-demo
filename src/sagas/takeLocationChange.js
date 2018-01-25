@@ -11,7 +11,7 @@ function* handleLocationChange() {
   if (!currentRoute) {
     currentRoute = yield select(getDefaultRoute);
 
-    yield put(replace(currentRoute.pathname));
+    yield put(replace(`${process.env.PUBLIC_URL}${currentRoute.pathname}`));
   }
 
   yield put(requestAppData(currentRoute));
