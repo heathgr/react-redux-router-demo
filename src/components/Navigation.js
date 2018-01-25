@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = ({ routes }) => (
-  <nav>
+const Navigation = ({ routes, isNavigationVisible }) => (
+  <nav className={isNavigationVisible ? 'nav--visible' : null }>
     <ul>
       {
         routes.map(
